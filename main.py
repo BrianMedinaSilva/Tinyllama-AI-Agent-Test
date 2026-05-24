@@ -5,3 +5,7 @@ print("What would you like to ask about?: ")
 question = str(input())
 response = llm.invoke(question)
 print(response)
+
+f = open("output.txt", "w+")
+f.write(str(response))
+f.close()
